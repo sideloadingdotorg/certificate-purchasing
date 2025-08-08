@@ -1,0 +1,21 @@
+datasource db {
+  provider   = "postgresql"
+  url        = env("DATABASE_URL")
+  directUrl  = env("DIRECT_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Purchase {
+  id          String   @id @default(cuid())
+  email       String
+  itemName    String
+  orderId     String
+  udid        String
+  message     String
+  date        DateTime
+  deviceModel String?
+  delivered   Boolean   @default(false)
+}
