@@ -8,7 +8,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "loyahdev - iOS Sideloading Certificates",
+  title: "Sideloading.org - iOS Sideloading Certificates",
   description: "Get a sideloading certificate for iOS, iPadOS, tvOS, and VisionOS. No revokes or blacklists. Easy and affordable.",
   generator: 'sideloading.org'
 };
