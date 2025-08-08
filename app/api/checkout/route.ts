@@ -32,7 +32,7 @@ export async function POST(req: NextRequest) {
             product_data: {
               name: `${tier.name} Certificate`,
               description: `Device UDID: ${udid}${message ? `\nMessage: ${message}` : ""}`,
-              images: ["https://static-00.iconduck.com/assets.00/mobile-phone-emoji-1158x2048-alujjp3p.png"],
+              images: ["https://raw.githubusercontent.com/sideloadingdotorg/certificate-purchasing/refs/heads/main/public/phoneicns.png"],
             },
             unit_amount: tier.price * 100,
           },
